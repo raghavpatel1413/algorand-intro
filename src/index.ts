@@ -1,7 +1,8 @@
 import * as algokit from '@algorandfoundation/algokit-utils';
 
 async function main() {
-    console.log('Code goes here!')
+    const algorand = algokit.Algorandclient.defaultLocalNet()
+    const alice = algorand.account.random()
+    const bob = algorand.account.random()
 }
-
 main();
